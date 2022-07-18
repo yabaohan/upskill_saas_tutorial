@@ -12,7 +12,7 @@
 
   <body>
     
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class='container'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -27,7 +27,7 @@
   <i class="fa fa-group"></i>
   DevMatch
 <% end %>
-    </div>
+  </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
         <!--<li><a href="/about">About</a></li>-->
@@ -41,10 +41,11 @@
 
 <div class = "container">
     <% flash.each do |type, msg| %>
-      <%= content_tag :div,msg, class: "alert alert-#{type}" %>
+      <%= content_tag :div,msg, class: "alert alert-#{type}" %><!--Rails way of making a div-->
     <% end %>
 </div>
-  <%= yield %>
+
+<%= yield %>
 
   </body>
 </html>
